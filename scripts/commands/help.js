@@ -16,7 +16,6 @@ module.exports.config = {
     delayUnsend: 60
   }
 };
-
 module.exports..languages = {
  "en": {
   "moduleInfo": "•—»✨[ %1 ]✨«—•\n\nUsage: %3\nCategory: %4\nWaiting time: %5 seconds(s)\nPermission: %6\nDescription: %2\n\nModule coded by %7",
