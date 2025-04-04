@@ -4,10 +4,11 @@ module.exports = {
     config: {
         name: "👍",
         version: "1.0.1",
+        prefix:false,
         hasPermssion: 0,
         credits: "VanHung - Fixed by LTD", 
         description: "hihihihi",
-        commandCategory: "no prefix",
+        category: "no prefix",
         usages: "👍",
         cooldowns: 5, 
     },
@@ -27,7 +28,7 @@ module.exports = {
         }
     },
 
-    run: function({ api, event }) {
+    start: function({nayan }) {
         // This can be used for further expansion if needed
     }
 };
