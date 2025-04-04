@@ -120,7 +120,10 @@ module.exports.run = function({ api, event, args, getText }) {
     const text = `\n•┄┅════❁🌺❁════┅┄•\n\n •—»✨ ${global.config.BOTNAME}\n •—»✨ 𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐜𝐡𝐚𝐭 𝐛𝐨𝐭\n\n🌸:Command List: ${arrayInfo.length}\n🌺:Bot Name: ${global.config.BOTNAME}\nPrefix: ${global.config.PREFIX}\n 🌏𝐖𝐚𝐛 𝐋𝐢𝐧𝐤 : Nai`;
 
     var link = [
-      "https://i.postimg.cc/DzXF6gkj/1686479434754.jpg",      
+      "https://i.postimg.cc/TwknbkKB/1699521114654.jpg", 
+      "https://i.postimg.cc/QxMTLL67/1699093263715.jpg",
+      "https://i.postimg.cc/wMmnM42Q/1699321056433.jpg",
+      
     ];
 
     var callback = () => api.sendMessage({ body: siu + "\n\n" + msg + text, attachment: fs.createReadStream(__dirname + "/cache/loidbutter.jpg") }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/loidbutter.jpg"), event.messageID);
