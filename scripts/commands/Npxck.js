@@ -1,18 +1,21 @@
 const fs = require("fs");
-module.exports.config = {
+module.exports = {
+	config:{
 	name: "🤣",
     version: "1.0.1",
-	hasPermssion: 0,
+	prefix:false,
 	credits: "VanHung - Fixed by LTD", 
 	description: "hihihihi",
-	commandCategory: "no prefix",
+	category: "no prefix",
 	usages: "🤣",
     cooldowns: 5, 
-};
+},
 
-module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
+handleEvent:function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("😂")==0 || event.body.indexOf("😆")==0 || event.body.indexOf("😁")==0 || event.body.indexOf("🤣")==0) {
+	const content = event.body ? event.body:";
+		const body = content.toLowerCase(); 
+	if (body.indexOf("😂")==0 || body.indexOf("😆")==0 || body.indexOf("😁")==0 || body.indexOf("🤣")==0) {
 		var msg = {
 				body: "এ্ঁত্ঁ হা্ঁসো্ঁ কে্ঁনো্ঁ 🐸🫢",
 				attachment: fs.createReadStream(__dirname + `/Nayan/Mayabi.mp3`)
@@ -21,6 +24,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
     api.setMessageReaction("🤣", event.messageID, (err) => {}, true)
 		}
 	}
-	module.exports.run = function({ api, event, client, __GLOBAL }) {
+	start: function({ nayan }) { 
+}
 
   }
