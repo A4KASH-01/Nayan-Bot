@@ -4,6 +4,7 @@ module.exports = {
     config: {
         name: "🤣",
         version: "1.0.1",
+        prefix:false,
         permission: 0,
         credits: "nayan",
         description: "hihihihi",
